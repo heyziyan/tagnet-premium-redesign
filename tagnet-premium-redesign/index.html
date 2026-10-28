@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f6fb" />
+  <title>Tagnet — Digital Identity Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Tagnet home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>tagnet<span class="brand-dot">.</span></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="nav">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">⌂</span> Overview</button>
+        <button class="nav-item" data-view="studio"><span class="nav-icon">✳</span> Profile Studio <span class="nav-badge">NEW</span></button>
+        <button class="nav-item" data-view="identity"><span class="nav-icon">◈</span> My Identity</button>
+        <button class="nav-item" data-view="orders"><span class="nav-icon">▤</span> My Orders</button>
+        <button class="nav-item" data-view="analytics"><span class="nav-icon">↗</span> Analytics</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <div class="help-icon">✦</div>
+          <strong>Your identity, elevated.</strong>
+          <p>One profile. Every connection.</p>
+          <button class="text-button" data-view="studio">Customize profile <span>↗</span></button>
+        </div>
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span> Settings</button>
+        <div class="user-mini">
+          <div class="avatar avatar-small">Z</div>
+          <div class="user-mini-text"><strong>Ziyan Khan</strong><span>Personal workspace</span></div>
+          <span class="more">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="breadcrumbCurrent">Overview</strong></div>
+        <div class="top-actions">
+          <span class="status-pill"><i></i> All changes saved</span>
+          <button class="icon-button" title="Notifications">♧<span class="notification-dot"></span></button>
+          <div class="avatar avatar-top">Z</div>
+        </div>
+      </header>
+
+      <section class="view active-view" id="view-overview">
+        <div class="welcome-row">
+          <div><div class="eyebrow">MONDAY, OCTOBER 19</div><h1>Your identity, <span>in one place.</span></h1><p class="subheading">A clearer way to introduce yourself, share your work, and make every connection count.</p></div>
+          <button class="primary-button" data-view="studio"><span>✳</span> Edit my profile <span>↗</span></button>
+        </div>
+        <div class="hero-card">
+          <div class="hero-copy">
+            <span class="live-label"><i></i> YOUR PUBLIC IDENTITY</span>
+            <h2>More than a link.<br><em>A whole you.</em></h2>
+            <p>Your work, personality, contact details and social presence — designed to feel like you.</p>
+            <div class="hero-buttons"><button class="white-button" id="openPublic">Preview public profile ↗</button><button class="hero-link" data-view="studio">Personalize it <span>→</span></button></div>
+            <div class="hero-url"><span class="url-icon">↗</span><span>tagnet.in/</span><strong>ziyan</strong><button id="copyUrl" title="Copy profile URL">▢</button></div>
+          </div>
+          <div class="hero-art">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="floating-chip chip-top"><span>✦</span> Digital identity</div>
+            <div class="profile-mini-card">
+              <div class="mini-cover"></div><div class="mini-avatar">Z</div>
+              <div class="mini-content"><span class="verified">✓</span><h3>Ziyan Khan</h3><p>Building things for the internet.</p><div class="mini-tags"><span>Developer</span><span>Creator</span></div><div class="mini-contact"><span>↗</span><span>＋</span><span>✉</span><span>⌘</span></div></div>
+            </div>
+            <div class="floating-chip chip-bottom"><span class="pulse-dot"></span> Ready to connect</div>
+          </div>
+        </div>
+        <div class="section-heading"><div><h2>Your overview</h2><p>A quick look at your digital presence.</p></div><button class="subtle-button" data-view="analytics">View analytics <span>→</span></button></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span>Profile visits</span><span class="stat-icon purple">↗</span></div><div class="stat-number">1,284 <span class="trend">↑ 12.8%</span></div><div class="stat-foot">Compared with last 30 days</div><div class="sparkline"><i style="height:28%"></i><i style="height:43%"></i><i style="height:37%"></i><i style="height:58%"></i><i style="height:47%"></i><i style="height:72%"></i><i style="height:60%"></i><i style="height:88%"></i><i style="height:70%"></i><i style="height:100%"></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Contact saves</span><span class="stat-icon peach">♡</span></div><div class="stat-number">96 <span class="trend">↑ 8.2%</span></div><div class="stat-foot">People who chose to save your contact</div><div class="mini-bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:42%"></i><i style="height:70%"></i><i style="height:60%"></i><i style="height:84%"></i><i style="height:68%"></i><i style="height:100%"></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Link interactions</span><span class="stat-icon blue">⌁</span></div><div class="stat-number">438 <span class="trend">↑ 5.4%</span></div><div class="stat-foot">Clicks across your profile actions</div><div class="progress-list"><div><span>Portfolio</span><b>68%</b></div><div class="progress"><i style="width:68%"></i></div><div><span>Instagram</span><b>45%</b></div><div class="progress"><i style="width:45%"></i></div></div></article>
+          <article class="stat-card identity-stat"><div class="stat-top"><span>Identity completion</span><span class="stat-icon green">✓</span></div><div class="completion-row"><div class="completion-ring"><span>78<small>%</small></span></div><div><strong>Looking good!</strong><p>Add a few details to make your profile stand out.</p><button class="text-button" data-view="identity">Complete profile →</button></div></div></article>
+        </div>
+        <div class="bottom-grid">
+          <article class="panel recent-panel"><div class="panel-heading"><div><h3>Recent activity</h3><p>What's happening on your profile</p></div><button class="dots-button">•••</button></div>
+            <div class="activity-row"><div class="activity-icon lavender">↗</div><div class="activity-copy"><strong>New profile visit</strong><span>Someone opened your public identity</span></div><time>2 min ago</time></div>
+            <div class="activity-row"><div class="activity-icon peach">♡</div><div class="activity-copy"><strong>Contact card downloaded</strong><span>A visitor saved your contact details</span></div><time>1 hour ago</time></div>
+            <div class="activity-row"><div class="activity-icon blue">⌁</div><div class="activity-copy"><strong>Portfolio link clicked</strong><span>Someone checked out your work</span></div><time>Yesterday</time></div>
+          </article>
+          <article class="panel order-panel"><div class="panel-heading"><div><h3>Your Tagnet order</h3><p>Product delivery at a glance</p></div><button class="subtle-button" data-view="orders">View all →</button></div>
+            <div class="order-product"><div class="product-thumb"><div class="keychain-shape">t.</div></div><div class="order-product-copy"><strong>Tagnet NFC Keychain</strong><span>Lavender · 1 item</span><span class="order-id">Order #TG-1048</span></div><span class="order-status">In transit</span></div>
+            <div class="delivery-track"><div class="track-step done"><i>✓</i><span>Ordered</span></div><div class="track-line done"></div><div class="track-step done"><i>✓</i><span>Packed</span></div><div class="track-line done"></div><div class="track-step current"><i>•</i><span>In transit</span></div><div class="track-line"></div><div class="track-step"><i>4</i><span>Delivered</span></div></div>
+            <button class="outline-button full-width" data-view="orders">Track this order <span>→</span></button>
+          </article>
+        </div>
+        <footer class="footer-note">Made for real connections <span>✦</span> <span class="footer-right">TAGNET © 2026</span></footer>
+      </section>
+
+      <section class="view" id="view-studio">
+        <div class="page-title-row"><div><div class="eyebrow">MAKE IT YOURS</div><h1>Profile <span>Studio</span></h1><p class="subheading">Shape the way people experience your identity.</p></div><button class="primary-button" id="saveProfile">Save changes <span>✓</span></button></div>
+        <div class="studio-layout">
+          <div class="studio-controls">
+            <div class="panel editor-panel"><div class="panel-heading"><div><h3>Identity details</h3><p>The essentials people see first.</p></div><span class="step-number">01</span></div>
+              <label class="field-label" for="profileName">Display name</label><input id="profileName" class="field" value="Ziyan Khan" />
+              <label class="field-label" for="profileRole">Headline</label><input id="profileRole" class="field" value="Building things for the internet." />
+              <label class="field-label" for="profileBio">About you</label><textarea id="profileBio" class="field textarea" rows="3">Developer, curious builder, and creator. I like turning small ideas into useful things.</textarea>
+              <div class="two-fields"><div><label class="field-label" for="profileLocation">Location</label><input id="profileLocation" class="field" value="Amravati, India" /></div><div><label class="field-label" for="profileRoleTag">Primary role</label><select id="profileRoleTag" class="field"><option>Developer</option><option>Designer</option><option>Founder</option><option>Creator</option><option>Student</option><option>Professional</option></select></div></div>
+              <label class="field-label" for="profilePortfolio">Portfolio / website</label><input id="profilePortfolio" class="field" value="https://example.com" />
+              <label class="field-label" for="profileEmail">Public contact email</label><input id="profileEmail" class="field" value="hello@example.com" />
+            </div>
+            <div class="panel theme-panel"><div class="panel-heading"><div><h3>Choose your style</h3><p>Switch the look without rebuilding your profile.</p></div><span class="step-number">02</span></div>
+              <div class="theme-grid">
+                <button class="theme-option selected" data-theme="signature"><span class="theme-swatch swatch-signature"><i></i><i></i><i></i></span><strong>Tagnet Signature</strong><small>Clean · Premium</small></button>
+                <button class="theme-option" data-theme="glass"><span class="theme-swatch swatch-glass"><i></i><i></i><i></i></span><strong>Liquid Glass</strong><small>Soft · Translucent</small></button>
+                <button class="theme-option" data-theme="bento"><span class="theme-swatch swatch-bento"><i></i><i></i><i></i><i></i></span><strong>Bento Grid</strong><small>Modular · Modern</small></button>
+                <button class="theme-option" data-theme="editorial"><span class="theme-swatch swatch-editorial"><i></i><i></i><i></i></span><strong>Editorial</strong><small>Bold · Expressive</small></button>
+                <button class="theme-option" data-theme="clay" ><span class="theme-swatch swatch-clay"><i></i><i></i><i></i></span><strong>Claymorphism</strong><small>Soft · Playful</small></button>
+                <button class="theme-option" data-theme="cyber"><span class="theme-swatch swatch-cyber"><i></i><i></i><i></i></span><strong>Cyberpunk</strong><small>Neon · Digital</small></button>
+                <button class="theme-option" data-theme="brutal"><span class="theme-swatch swatch-brutal"><i></i><i></i><i></i></span><strong>Neo-Brutalism</strong><small>Graphic · Loud</small></button>
+                <button class="theme-option" data-theme="retro"><span class="theme-swatch swatch-retro"><i></i><i></i><i></i></span><strong>Retro</strong><small>Warm · Nostalgic</small></button>
+              </div><p class="theme-note">Prototype includes 8 theme previews. Additional styles can be added to this same theme system.</p>
+            </div>
+            <div class="panel links-panel"><div class="panel-heading"><div><h3>Connect your world</h3><p>Choose the links that represent you.</p></div><span class="step-number">03</span></div>
+              <div class="social-field"><span class="social-symbol instagram">◎</span><div><strong>Instagram</strong><input id="socialInstagram" value="instagram.com/ziyan" /></div><span class="toggle-on">●</span></div>
+              <div class="social-field"><span class="social-symbol linkedin">in</span><div><strong>LinkedIn</strong><input id="socialLinkedin" value="linkedin.com/in/heyziyan" /></div><span class="toggle-on">●</span></div>
+              <div class="social-field"><span class="social-symbol github">⌘</span><div><strong>GitHub</strong><input id="socialGithub" value="github.com/heyziyan" /></div><span class="toggle-on">●</span></div>
+              <button class="add-link-button" id="addLink">＋ Add another link</button>
+              <div id="extraLinks"></div>
+            </div>
+          </div>
+          <div class="preview-column"><div class="preview-heading"><div><span class="preview-live-dot"></span><strong>Live preview</strong><span class="preview-label">PUBLIC PROFILE</span></div><button class="icon-button" id="previewExpand" title="Open profile preview">↗</button></div>
+            <div class="profile-preview theme-signature" id="profilePreview">
+              <div class="preview-cover"><div class="cover-orb orb-a"></div><div class="cover-orb orb-b"></div><span class="preview-brand">tagnet<span>.</span></span></div>
+              <div class="preview-profile-body"><div class="preview-avatar" id="previewAvatar">Z</div><div class="preview-profile-head"><div><h2 id="previewName">Ziyan Khan</h2><p id="previewRole">Building things for the internet.</p></div><span class="verified-badge">✓</span></div>
+                <p class="preview-bio" id="previewBio">Developer, curious builder, and creator. I like turning small ideas into useful things.</p><div class="preview-meta"><span>⌖ <b id="previewLocation">Amravati, India</b></span><span>✦ <b id="previewTag">Developer</b></span></div>
+                <button class="save-contact" id="saveContact">＋ Save contact</button><button class="share-profile" id="shareProfile">↗ Share profile</button>
+                <div class="preview-divider"></div><div class="preview-section-title">FIND ME ELSEWHERE <span>↘</span></div>
+                <div class="preview-socials" id="previewSocials"><a href="#">◎ <span>Instagram</span> ↗</a><a href="#">in <span>LinkedIn</span> ↗</a><a href="#">⌘ <span>GitHub</span> ↗</a></div>
+                <div class="preview-feature"><div class="feature-icon">✳</div><div><strong>Currently building</strong><span>Ideas that make everyday life better.</span></div><span>↗</span></div>
+                <div class="preview-footer">A little introduction, by <strong>tagnet.</strong></div>
+              </div>
+            </div>
+            <div class="preview-tip"><span>✦</span><p><strong>Small detail, big difference.</strong><br>Visitors can save your contact as a file or share your profile link. NFC opens the profile; it does not silently save a contact.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-identity">
+        <div class="page-title-row"><div><div class="eyebrow">YOUR PUBLIC PRESENCE</div><h1>My <span>Identity</span></h1><p class="subheading">Manage your public profile and ways people can connect.</p></div><button class="primary-button" data-view="studio">Edit identity ↗</button></div>
+        <div class="identity-banner panel"><div class="identity-banner-icon">✳</div><div class="identity-banner-copy"><span class="live-label"><i></i> PUBLIC PROFILE ACTIVE</span><h2>ziyan <span class="muted">/ tagnet.in</span></h2><p>Your public identity is visible to anyone with your profile link or NFC keychain.</p><div class="identity-actions"><button class="outline-button" id="copyIdentityUrl">▢ Copy profile link</button><button class="outline-button" id="identityPreview">↗ Preview profile</button></div></div><div class="qr-placeholder"><div class="qr-grid" aria-label="Decorative QR preview"></div><small>QR PREVIEW</small></div></div>
+        <div class="identity-cards"><article class="panel identity-detail-card"><div class="panel-heading"><div><h3>Identity completeness</h3><p>Help people understand who you are.</p></div><span class="stat-icon green">✓</span></div><div class="completion-line"><div><span>Profile details</span><b>4/5</b></div><div class="progress"><i style="width:80%"></i></div></div><div class="completion-line"><div><span>Contact methods</span><b>2/3</b></div><div class="progress"><i style="width:66%"></i></div></div><div class="completion-line"><div><span>Social presence</span><b>3/4</b></div><div class="progress"><i style="width:75%"></i></div></div><button class="text-button" data-view="studio">Improve your profile →</button></article>
+        <article class="panel identity-detail-card"><div class="panel-heading"><div><h3>Connected products</h3><p>Physical items linked to your identity.</p></div><span class="stat-icon purple">◈</span></div><div class="connected-product"><div class="product-thumb"><div class="keychain-shape">t.</div></div><div><strong>Tagnet NFC Keychain</strong><span>Lavender · TAG-••••-1048</span><small class="connected-status"><i></i> Active and linked</small></div></div><div class="detail-separator"></div><p class="small-muted">Your NFC item opens your public profile. Update the destination only when you have permission to manage that tag.</p><button class="outline-button full-width" data-view="orders">Manage products →</button></article></div>
+      </section>
+
+      <section class="view" id="view-orders">
+        <div class="page-title-row"><div><div class="eyebrow">PURCHASES & DELIVERY</div><h1>My <span>Orders</span></h1><p class="subheading">Everything you’ve ordered, with delivery progress in one place.</p></div><button class="outline-button" id="downloadOrders">Export order list ↓</button></div>
+        <div class="order-summary-grid"><div class="order-summary-card"><span>Total orders</span><strong>3</strong><small>Across your account</small></div><div class="order-summary-card"><span>In progress</span><strong>1</strong><small>Being delivered</small></div><div class="order-summary-card"><span>Delivered</span><strong>2</strong><small>Successfully received</small></div></div>
+        <div class="panel order-table-panel"><div class="panel-heading"><div><h3>Order history</h3><p>Track status and review each purchase.</p></div><select class="field filter-select" id="orderFilter"><option value="all">All orders</option><option value="In transit">In transit</option><option value="Delivered">Delivered</option><option value="Processing">Processing</option></select></div>
+          <div class="orders-list" id="ordersList">
+            <article class="order-row" data-status="In transit"><div class="product-thumb"><div class="keychain-shape">t.</div></div><div class="order-main"><strong>Tagnet NFC Keychain</strong><span>Order #TG-1048 · 1 item · Lavender</span><small>Ordered on 12 Oct 2026</small></div><div class="order-price"><strong>₹199</strong><span class="order-status">In transit</span></div><button class="row-action track-order" data-order="TG-1048">Track order ↗</button></article>
+            <article class="order-row" data-status="Delivered"><div class="product-thumb product-peach"><div class="keychain-shape">t.</div></div><div class="order-main"><strong>Tagnet NFC Keychain</strong><span>Order #TG-0982 · 2 items · Peach</span><small>Ordered on 21 Sep 2026</small></div><div class="order-price"><strong>₹298</strong><span class="status-delivered">Delivered</span></div><button class="row-action track-order" data-order="TG-0982">View details ↗</button></article>
+            <article class="order-row" data-status="Delivered"><div class="product-thumb product-blue"><div class="keychain-shape">t.</div></div><div class="order-main"><strong>Tagnet NFC Keychain</strong><span>Order #TG-0911 · 1 item · Sky</span><small>Ordered on 08 Sep 2026</small></div><div class="order-price"><strong>₹149</strong><span class="status-delivered">Delivered</span></div><button class="row-action track-order" data-order="TG-0911">View details ↗</button></article>
+          </div><div class="order-note"><span>ⓘ</span> Demo order data is shown here. Live payment, courier tracking and order updates need a connected backend and shipping provider.</div>
+        </div>
+      </section>
+
+      <section class="view" id="view-analytics">
+        <div class="page-title-row"><div><div class="eyebrow">UNDERSTAND YOUR REACH</div><h1>Identity <span>Analytics</span></h1><p class="subheading">See how people discover and interact with your profile.</p></div><select class="field filter-select"><option>Last 30 days</option><option>Last 7 days</option><option>Last 90 days</option></select></div>
+        <div class="analytics-kpis"><div class="panel analytics-kpi"><span>Total profile visits</span><strong>1,284</strong><small class="trend">↑ 12.8% vs previous period</small></div><div class="panel analytics-kpi"><span>Contact saves</span><strong>96</strong><small class="trend">↑ 8.2% vs previous period</small></div><div class="panel analytics-kpi"><span>Action clicks</span><strong>438</strong><small class="trend">↑ 5.4% vs previous period</small></div></div>
+        <div class="panel chart-panel"><div class="panel-heading"><div><h3>Profile engagement</h3><p>Illustrative daily activity · demo data</p></div><span class="chart-legend"><i></i> Profile visits</span></div><div class="chart-bars" aria-label="Illustrative bar chart"><div style="height:28%"><span>1</span></div><div style="height:42%"><span>2</span></div><div style="height:36%"><span>3</span></div><div style="height:52%"><span>4</span></div><div style="height:45%"><span>5</span></div><div style="height:67%"><span>6</span></div><div style="height:59%"><span>7</span></div><div style="height:80%"><span>8</span></div><div style="height:64%"><span>9</span></div><div style="height:90%"><span>10</span></div><div style="height:75%"><span>11</span></div><div style="height:100%"><span>12</span></div><div style="height:84%"><span>13</span></div><div style="height:72%"><span>14</span></div><div style="height:92%"><span>15</span></div><div style="height:78%"><span>16</span></div><div style="height:88%"><span>17</span></div><div style="height:95%"><span>18</span></div></div><div class="chart-axis"><span>Oct 1</span><span>Oct 7</span><span>Oct 13</span><span>Oct 19</span></div></div>
+        <div class="panel privacy-note"><div class="privacy-icon">⌑</div><div><h3>Respectful analytics</h3><p>In a production version, measure profile visits, QR/NFC entry source and button clicks without exposing visitors’ private identity. Show only data your tracking setup actually collects and disclose analytics clearly.</p></div></div>
+      </section>
+
+      <section class="view" id="view-settings">
+        <div class="page-title-row"><div><div class="eyebrow">PREFERENCES</div><h1>Account <span>Settings</span></h1><p class="subheading">Manage how your Tagnet workspace behaves.</p></div></div>
+        <div class="panel settings-panel"><h3>Profile visibility</h3><p>Choose whether your public identity can be opened by anyone with the link.</p><label class="setting-row"><span><strong>Public profile</strong><small>Allow people to view your profile via link, QR or NFC.</small></span><input type="checkbox" checked class="switch-input" /></label><div class="detail-separator"></div><label class="setting-row"><span><strong>Show location</strong><small>Display the location entered in your profile details.</small></span><input type="checkbox" checked class="switch-input" /></label><div class="detail-separator"></div><label class="setting-row"><span><strong>Profile analytics</strong><small>Enable privacy-conscious aggregate visit and click counts.</small></span><input type="checkbox" checked class="switch-input" /></label><div class="settings-warning">This is a frontend demo. Authentication, secure settings storage and real permissions must be implemented on the server before launch.</div></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-mark">✳</div><div class="eyebrow">PUBLIC PROFILE PREVIEW</div><h2 id="modalName">Ziyan Khan</h2><p id="modalHeadline">Building things for the internet.</p><div class="modal-summary" id="modalBio"></div><div class="modal-actions"><button class="primary-button" id="modalSaveContact">＋ Save contact</button><button class="outline-button" id="modalShare">↗ Share profile</button></div><p class="modal-footnote">Preview only · Public profile routing is not connected in this demo.</p></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
